@@ -1,0 +1,9 @@
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-5736
+There is problem with runc through 1.0-rc6 where attackers are able to overwrite the host 
+runc binary meaning able to access root to host with either of these 2 containers:
+a container could include an attacker-controlled image or 
+existing container, to which the attacker once had write access 
+https://core.trac.wordpress.org/changeset/33536
+There is a hash_key decoded
+https://core.trac.wordpress.org/browser/branches/4.2/src/wp-includes/class-wp-customize-widgets.php?rev=33536
+this page allows for use of hash_equals() for widgets 
