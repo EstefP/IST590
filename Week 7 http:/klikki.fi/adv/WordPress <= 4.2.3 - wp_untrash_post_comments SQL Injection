@@ -1,0 +1,15 @@
+When going to reference https://github.com/WordPress/WordPress/commit/70128fe7605cb963a46815cf91b0a5934f70eff5
+I see that there is 2 files wp-includes/post.php and wp-includes/version.php 
+Going to the second reference it reports result of Pentesting that include 5 steps 
+first being Wordpress <=4.2 where you find a comment on existing post 
+open WP_<=_4.2_Unauthenticated_Stored_XSS.js and copy to javascript 
+navigate to your desired WP site 
+create a new comment on post and paste 
+wait on administrator to approve you comment 
+Next you will need Username Enumeration provided via HTTP GET Request for using author ID
+Next will be finding user enuermation provided via Login Error Messages 
+NExt you would vulnerability traversal and information exposure 
+Lastly delete plugin path traversal/arbitrary file deletion 
+Steps above come from reference https://github.com/harrystaley/CSCI4349_Week7_WpPentest/blob/master/readme.md
+https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2015-2213, describes SQL injection vulnerability in wp_untrash_post_comments 
+This flaw allows hackers to preform arbitrary SQL commands via a comment
