@@ -1,0 +1,8 @@
+https://wordpress.org/news/2016/01/wordpress-4-4-1-security-and-maintenance-release/
+emoji update resolves issue about bug 
+apparently some sites with older versions of OpenSSL installed were unable to communicate with other services 
+a post URL could have redirect you to a wrong post 
+https://github.com/WordPress/WordPress/commit/7ab65139c6838910426567849c7abed723932b87
+Deals with themes that include error messages  
+in the code it has if statements 
+so the vulnerability would be in when the error messages comes up 
